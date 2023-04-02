@@ -1,5 +1,16 @@
+import ReactDOM from 'react-dom/client';
+import React from 'react';
+import App from './App';
+
 function main() {
-  // TODO: App 컴포넌트를 render 해주세요.
+  const root = document.getElementById('root');
+  if (root) {
+    ReactDOM.createRoot(root).render(
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>,
+    );
+  }
 }
 
 main();
